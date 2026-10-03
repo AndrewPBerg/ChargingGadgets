@@ -165,7 +165,7 @@ public final class DataGenerators {
 
         @Override
         protected void addTags(HolderLookup.Provider lookup) {
-            tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BlockRegistry.CHARGING_STATION.get());
+              tag(BlockTags.MINEABLE_WITH_PICKAXE).add(BlockRegistry.CHARGING_STATION.get().builtInRegistryHolder().key());
         }
     }
 }
